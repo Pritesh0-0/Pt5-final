@@ -29,7 +29,7 @@ const Edit = () => {
 
     React.useEffect(() => {
         getdata(id)
-    }, [])
+    })
 
 
     const handelChange = (id) => {
