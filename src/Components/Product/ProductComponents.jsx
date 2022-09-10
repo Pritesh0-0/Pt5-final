@@ -1,6 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import './Product.css'
+import { Link } from "react-router-dom";
 
 const ProductComponents = () => {
   const products = useSelector(state => state.allProducts.products)
@@ -16,6 +17,7 @@ const ProductComponents = () => {
         <p>{category}</p>
         <p>$ {price}</p>
        </div>
+       <Link to = "/EditPage"><button>Edit Details</button></Link>
       </div>
   )
   })
