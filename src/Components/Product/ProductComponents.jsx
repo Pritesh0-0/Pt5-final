@@ -9,9 +9,9 @@ const ProductComponents = () => {
     const {id, brand, title, image, category, price}  = product;
     return(
       <div className="container" key={id}>
-        <h3>{title}</h3>
+        <Link to ={`/Product/${product.id}`}><h3>{title}</h3></Link>
         <img src={image} alt={title}/>
-       
+
        <div>
        <p>{brand}</p>
         <p>{category}</p>
